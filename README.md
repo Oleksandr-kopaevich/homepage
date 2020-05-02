@@ -19,7 +19,7 @@ to install all needed packages.
 # Usage
 Inside project root's folder run a command:<br>
 ```npm run dev```<br>
-to start server locally and the project will be available on the url: http:/localhost:3000/ <br>
+to start server locally and the project will be available on the url: [http:/localhost:5000](http:/localhost:5000) <br>
 If you have any problems setting up the project don't hesitate to contact our contributors or simply create an issue with a detail explanation of your problem.
 
 # Contributing
