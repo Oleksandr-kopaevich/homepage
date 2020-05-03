@@ -22,5 +22,8 @@
   "devDependencies": {
     "sass": "^1.26.5",
     "serve": "^11.3.0"
+  },
+  "dependencies": {
+    "swiper": "^5.3.8"
   }
 }

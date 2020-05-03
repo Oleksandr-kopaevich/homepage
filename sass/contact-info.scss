@@ -1,0 +1,82 @@
+.contact-wrap {
+  padding: 0 !important;
+
+  p {
+    font-size: 18px;
+    margin: 10px 0 5px;
+
+    @include mobile {
+      max-width: 500px;
+    }
+  }
+}
+
+.name {
+  text-transform: capitalize;
+}
+
+.job {
+  margin: -5px -4px 0;
+
+  span {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 16px;
+    margin: 10px 2px 0;
+    border: 1px solid black;
+  }
+}
+
+.job,
+.name {
+  @include mobile {
+    text-align: left;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: capitalize;
+
+  @include touch {
+    flex-direction: row;
+  }
+
+  @include mobile {
+    margin-top: 5px;
+  }
+
+  li {
+    display: flex;
+    width: 25%;
+    margin: 0;
+    padding-right: 15px;
+    margin-top: 5px;
+    font-size: 14px;
+
+    @include touch {
+      width: 33.33%;
+    }
+
+    @include mobile {
+      width: 50%;
+      margin-top: 10px;
+    }
+  }
+
+  img {
+    max-height: 16px;
+    max-width: 20px;
+    margin-right: 5px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
