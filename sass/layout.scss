@@ -1,0 +1,63 @@
+.stackable.grid > .row > .wide.column.is-padingless-mobile {
+  @include mobile {
+    padding: 0 !important;
+  }
+}
+
+.stackable.grid > .row.is-padingless-mobile {
+  @include mobile {
+    padding: 0 20px !important;
+  }
+}
+
+.stackable.grid > .row > .wide.column,
+.stackable.grid > .wide.column,
+.stackable.grid > .column.grid > .column,
+.stackable.grid > .column.row > .column,
+.stackable.grid > .row > .column,
+.stackable.grid > .column:not(.row),
+.grid > .stackable.row > .column {
+  @include mobile {
+    padding: 1em 20px !important;
+  }
+}
+
+.fat.divider {
+  @include touch {
+    width: 50%;
+  }
+}
+
+.attention-block {
+  max-width: 780px;
+  margin: 30px auto 0;
+  line-height: 1.5;
+  font-size: 20px;
+  padding: 0 20px;
+
+  @include touch {
+    font-size: 18px;
+  }
+
+  @include mobile {
+    font-size: 16px;
+  }
+
+  p {
+    padding: 30px;
+    border: 5px solid red;
+
+    @include mobile {
+      padding: 15px;
+    }
+  }
+}
+
+article {
+  margin-top: 30px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+}

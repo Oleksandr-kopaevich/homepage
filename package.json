@@ -1,0 +1,29 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "My very own personal website.  Basically this is just a résumé of an American violinist, singer, songwriter, and dancer. This project should help other fans to get more information about her life in an easy and comfortable way to look at. I believe that it is important to save life details of great people for coming future generations, so let it be one of the copies to help her image live forever.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "sass --watch ./sass/index.scss ./styles/main.css",
+    "dev": "serve & npm run watch-sass",
+    "build": "sass ./sass/index.scss ./styles/main.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://5a0659291da9cc9a204c12ceb26ecc4162805006@github.com/Oleksandr-kopaevich/homepage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oleksandr-kopaevich/homepage/issues"
+  },
+  "homepage": "https://github.com/Oleksandr-kopaevich/homepage#readme",
+  "devDependencies": {
+    "sass": "^1.26.5",
+    "serve": "^11.3.0"
+  },
+  "dependencies": {
+    "swiper": "^5.3.8"
+  }
+}
