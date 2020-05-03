@@ -1,0 +1,9 @@
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.label {
+  flex-grow: 1;
+  text-align: center;
+}
