@@ -1,11 +1,13 @@
 .swiper-container {
   height: 300px;
   padding-right: 30px !important;
+  margin-bottom: 30px;
 
   @include touch-small {
     height: 340px;
     padding-right: 0 !important;
     padding-bottom: 0 !important;
+    margin-bottom: 15px;
   }
 
   @include mobile {
