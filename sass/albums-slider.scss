@@ -1,0 +1,131 @@
+.swiper-container {
+  height: 300px;
+  padding-right: 30px !important;
+
+  @include touch-small {
+    height: 340px;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  @include mobile {
+    max-width: 500px;
+    margin-left: 0 !important;
+  }
+
+  .swiper-pagination-bullet {
+    @include touch-small {
+      width: 12px;
+      height: 12px;
+      margin: 0 8px !important;
+    }
+  }
+}
+
+.swiper-wrapper {
+  margin-right: 30px;
+}
+
+.album-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+
+  @include touch-small {
+    align-items: flex-end;
+  }
+
+  h4 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+}
+
+.album-title-wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  @include touch-small {
+    display: block;
+  }
+
+  span {
+    margin-left: 15px;
+
+    @include touch-small {
+      margin-left: 0;
+    }
+  }
+}
+
+.album-body {
+  display: flex;
+  max-height: 268px;
+  border: 1px solid;
+
+  @include touch-small {
+    display: block;
+    max-height: 251px;
+    overflow: auto;
+  }
+}
+
+.album-cover {
+  position: relative;
+  width: 50%;
+
+  @include touch-small {
+    padding: 10px 0 0 10px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: 100%;
+
+    @include touch-small {
+      height: 150px;
+      width: auto;
+      object-fit: unset;
+    }
+  }
+}
+
+.songs-list {
+  width: 50%;
+  max-height: 100%;
+  overflow: auto;
+  padding: 0;
+  margin-left: auto;
+
+  @include touch-small {
+    width: 100%;
+    overflow: initial;
+  }
+
+  li {
+    &:before {
+      content: none;
+    }
+  }
+
+  a {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5px 10px;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  .duration {
+    padding-left: 20px;
+  }
+}
