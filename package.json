@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "serve"
+    "watch-sass": "sass --watch ./sass/index.scss ./styles/main.css",
+    "dev": "serve & npm run watch-sass",
+    "build": "sass ./sass/index.scss ./styles/main.css --style compressed"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,10 @@
   },
   "homepage": "https://github.com/Oleksandr-kopaevich/homepage#readme",
   "devDependencies": {
+    "sass": "^1.26.5",
     "serve": "^11.3.0"
+  },
+  "dependencies": {
+    "swiper": "^5.3.8"
   }
 }
