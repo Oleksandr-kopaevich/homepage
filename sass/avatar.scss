@@ -1,4 +1,12 @@
 .avatar {
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 50%;
-  box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+  box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+}
+
+.avatar-wrapper {
+  @include mobile {
+    max-width: 320px;
+  }
 }
