@@ -1,5 +1,6 @@
 initSlider();
 initHandleScrollInSlider();
+fixLanguagesLinks();
 
 function initSlider() {
   new Swiper(".swiper-container", {
@@ -44,4 +45,17 @@ function initHandleScrollInSlider() {
 
 function blockSliderSwap(e) {
   e.stopPropagation();
+}
+
+function fixLanguagesLinks() {
+  const langLinks = Array.from(document.getElementsByClassName("language"));
+  let domain = window.location.origin;
+
+  if (window.location.hostname === "oleksandr-kopaevich.github.io") {
+    domain += "/homepage";
+  }
+
+  langLinks.forEach((langLink) => {
+    langLink.href = `${domain}/${langLink.dataset.langForLink || ""}`;
+  });
 }
