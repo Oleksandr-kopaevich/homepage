@@ -50,12 +50,12 @@ function blockSliderSwap(e) {
 function fixLanguagesLinks() {
   const langLinks = Array.from(document.getElementsByClassName("language"));
   let domain = window.location.origin;
-  
-  switch(window.location.hostname) {
-    case 'oleksandr-kopaevich.github.io': domain += '/homepage';
-  };
+
+  if (window.location.hostname === "oleksandr-kopaevich.github.io") {
+    domain += "/homepage";
+  }
 
   langLinks.forEach((langLink) => {
-    langLink.href = `${domain}/${langLink.dataset.langForLink || ''}`;
+    langLink.href = `${domain}/${langLink.dataset.langForLink || ""}`;
   });
 }
