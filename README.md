@@ -1,5 +1,11 @@
 # :star_struck: Lindsey's Stirling :violin: Resume
 My very own personal website.  Basically this is just a résumé of an American violinist, singer, songwriter, and dancer. This project should help other fans to get more information about her life in an easy and comfortable way to look at. I believe that it is important to save life details of great people for coming future generations, so let it be one of the copies to help her image live forever.
+Check available demos online:<br>
+AWS:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;prod: http://lindsey.stirling.com-production.s3-website.eu-west-2.amazonaws.com/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;staging: http://lindsey.stirling.com-staging.s3-website.eu-west-2.amazonaws.com/<br>
+GitHub Pages: https://oleksandr-kopaevich.github.io/homepage/<br>
+Now: https://homepage-pi-jet.now.sh/<br>
 
 # Table of Contents
 [Installation](#installation)<br>
